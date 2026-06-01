@@ -1,0 +1,30 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<h1>Eco lifestyle </h1>
+<script>
+  window.wxOConfiguration = {
+    orchestrationID: "357b196b0f774d568cd59875a325eab4_d66f1661-d874-4ba1-aa0b-c26702f4e71e",
+    hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/357b196b0f774d568cd59875a325eab4:d66f1661-d874-4ba1-aa0b-c26702f4e71e::",
+    chatOptions: {
+        agentId: "91b8e1fb-7f1f-452a-a94e-b911afc31df9", 
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);                     
+</script> 
+
+<body>
+</html>
